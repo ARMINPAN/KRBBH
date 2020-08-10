@@ -5,7 +5,10 @@ body, html {
     background-color: rgb(59, 59, 59);
   }
   
-#image-site{
-    position: sticky;
-    
+.image-site{
+    background-image: url('Untitled-3.jpg');
+    position: top sticky;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
 }
