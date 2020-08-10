@@ -8,6 +8,3 @@ body, html {
 .image-site{
     position: sticky;
 }
-.image-site a{
-    max-width: 100px;
-}
