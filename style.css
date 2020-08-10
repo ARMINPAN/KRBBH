@@ -8,12 +8,66 @@ body, html {
 .image-site{
     position: relative;
 }
-
-.image-site .social-logos{
+.image-site .komaki{
     position: absolute;
-    top:93%;
-    right: 3%;
+    top: 91%;
+    right: 15%;
+}
+.image-site .komaki .social-logos{
+    position: absolute;
+    top:80%;
+    right: 100%;
     display: grid;
     grid-template-columns: 26px 26px 30px;
-    grid-gap: 100px;
+    grid-gap: 70%;
 }
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #07423f;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    display: none;
+  } 
+
+
+ @media screen and (min-width: 757px) and (max-width:992px){
+    .image-site .komaki{
+         right: 13%
+     }
+    .image-site .komaki .social-logos{
+        top:90%;
+        grid-gap: 45%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 757px){
+    .image-site .komaki{
+        top: 85%;
+        right: 13%
+    }
+    .image-site .komaki .social-logos{
+        grid-template-columns: 12px 12px 18px;
+        top:70%;
+        top:75%;
+        grid-gap:45%;
+        
+    }
+
+}
+@media screen and (max-width: 500px){
+    .image-site .komaki{
+        top: 85%;
+        right: 13%
+    }
+    .image-site .komaki .social-logos{
+        grid-template-columns: 6px 6px 10px;
+        top:70%;
+        grid-gap:45%;
+        
+    }
+
+}
+ 
