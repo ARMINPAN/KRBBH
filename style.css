@@ -43,9 +43,9 @@ body, html {
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 757px){
+@media screen and (min-width: 400px) and (max-width: 757px){
     .image-site .komaki{
-        top: 85%;
+        top: 90%;
         right: 13%
     }
     .image-site .komaki .social-logos{
@@ -57,7 +57,7 @@ body, html {
     }
 
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 400px){
     .image-site .komaki{
         top: 85%;
         right: 13%
