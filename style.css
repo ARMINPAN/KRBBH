@@ -26,8 +26,8 @@ body, html {
 
   .image-site .txt-rotate{
     position: absolute;
-    width: 464px;
-    height: 300px;
+    width: 35%;
+    height: 50%;
     background-color: rgba(0, 0, 0, 0.801);
     top: 24%;
     left:15%;
@@ -44,6 +44,9 @@ body, html {
         top:90%;
         grid-gap: 45%;
     }
+    .image-site .txt-rotate{
+        font-size: 25px;
+    }
 }
 
 @media screen and (min-width: 400px) and (max-width: 757px){
@@ -58,6 +61,9 @@ body, html {
         grid-gap:45%;
         
     }
+    .image-site .txt-rotate{
+        font-size: 17px;
+    }
 
 }
 @media screen and (max-width: 400px){
@@ -70,6 +76,9 @@ body, html {
         top:70%;
         grid-gap:45%;
         
+    }
+    .image-site .txt-rotate{
+        font-size: 10px;
     }
 
 }
