@@ -4,6 +4,25 @@ body, html {
     margin: 0;
     background-color: rgb(59, 59, 59);
   }
+  a:link {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgba(255, 255, 255, 0);
+  }
+  
+  a:hover {
+    color: rgb(17, 17, 17);
+    background-color: rgba(255, 255, 255, 0.945);
+  }
+  
+  a:active {
+    color: rgb(189, 189, 17);
+    background-color: transparent;
+  }
   
 .image-site{
     position: relative;
@@ -26,19 +45,19 @@ body, html {
     position: absolute;
     width: 100%;
     height: 7%;
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: rgba(0, 0, 0, 0.719);
     top: 0%;
 }
 .image-site .headernav .headernavitems{
+    display: block;
+    text-decoration: none;
+    font-family: 'FS Albert Arabic Web Regular' , 'B nazanin';
+    font-size: 20px;
     direction: rtl;
-    position: absolute;
-    right: 5%;
+    position: right center absolute;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap:50%;
-
-}
-.image-site .headernav .headernavitems a{
+    grid-template-columns: auto auto auto auto auto auto;
+    text-align: center;
 
 }
 
