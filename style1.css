@@ -75,32 +75,29 @@ body, html {
 
 /* header-responsive */
   .image-site .sidebar {
-    margin: 0;
+    margin: 0%;
     padding: 0;
     width: 0;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    position: absolute;
+    font-size: 7px;
+    height: 97.5%;
+    top: 0;
     overflow: auto;
   }
   
   .image-site .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  .image-site .sidebar a.active {
-    background-color: #4caf50;
     color: white;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
   }
   
   .image-site .sidebar a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
-  
 /* header button */
   .image-site .openbtn {
     font-size: 15px;
@@ -112,6 +109,7 @@ body, html {
     color: white;
     border: none;
     display: none;
+
   } 
   
 
@@ -152,6 +150,10 @@ body, html {
 
 }
 @media screen and (max-width: 400px){
+  .sidebar{
+    width: 0;
+    transition: 0.5s;
+  }
     .image-site .komaki{
         top: 85%;
         right: 13%
@@ -167,6 +169,7 @@ body, html {
     }
     .image-site .openbtn{
         display: block;
+        
       }
       .image-site .headernav {
         display: none;
