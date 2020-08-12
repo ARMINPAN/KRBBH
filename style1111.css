@@ -177,5 +177,8 @@ body, html {
       .image-site .headernav .headernavitems{
         display: none;
     }
+    .image-site .txt-rotate{
+      transition: 0.5s;
+  }
 }
  
