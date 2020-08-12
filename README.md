@@ -1,2 +1,2 @@
 # KRBBH
-Choosing a major workshop site - KARSOOGHE ROOZI BA BOZORGTARHA
+Major selection workshop site - KARSOOGHE ROOZI BA BOZORGTARHA
