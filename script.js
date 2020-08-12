@@ -16,11 +16,15 @@ for (let i = 0 ; i < hey.length ; i++){
 }
 
 function openSidebar(){
+    if((document.getElementsByClassName("sidebar")[0]).style.width === 50){
+        console.log("hey")
+        closeSidebar()
+    }
     var sidebar = document.getElementsByClassName("sidebar")[0]
     sidebar.style.width = "50px"
     
     var jabesiah = document.getElementsByClassName("txt-rotate")[0]
     jabesiah.style.left = "90px"
     tafirihii()
-
+ 
 }
