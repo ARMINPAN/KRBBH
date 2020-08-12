@@ -4,6 +4,7 @@ body, html {
     margin: 0;
     background-color: rgb(59, 59, 59);
   }
+  /* header ---------------------------------------------- */
   a:link {
     color: rgb(255, 255, 255);
     background-color: transparent;
@@ -111,7 +112,8 @@ body, html {
     display: none;
 
   } 
-  
+    /* header finished---------------------------------------------- */
+    
 
  @media screen and (min-width: 757px) and (max-width:992px){
     .image-site .komaki{
