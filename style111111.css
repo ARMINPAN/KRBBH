@@ -292,6 +292,14 @@ p {
   top: 22%;
 }
 
+.box2{
+  position: relative;
+  top: 90%;
+  width: 100%;
+  height: 550px;
+  background-color: whitesmoke;
+}
+
 /* media  */
 
 @media screen and (min-width: 757px) and (max-width:992px){
@@ -311,6 +319,7 @@ p {
     .scroll-btn .mouse {
       width: 30px;
       height: 45px;
+      top:25%;
     }
     .scroll-btn .mouse > *{
       width: 5px;
@@ -319,7 +328,7 @@ p {
     }
     .KRBBH {
 
-      height: 60%;
+      height: 70%;
     
     }
 }
@@ -353,7 +362,7 @@ p {
     }
     .KRBBH {
 
-      height: 40%;
+      height: 75%;
     
     }
  
@@ -400,7 +409,7 @@ p {
   }
   .KRBBH {
 
-    height: 30%;
+    height: 75%;
   
   }
 
