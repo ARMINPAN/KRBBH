@@ -3,6 +3,7 @@ body, html {
     height: 100%;
     margin: 0;
     background-color: rgb(59, 59, 59);
+    scroll-behavior: smooth;
   }
   /* header ---------------------------------------------- */
   .image-site .headernav a:link {
@@ -123,7 +124,7 @@ transition: 0.5s;
 position: relative;
 top: -26.5px;
   width: 100%;
-  height: 50%;
+  height: 90%;
 
 }
 .KRBBH:after{
@@ -133,11 +134,11 @@ top: -26.5px;
   position:absolute;
   top:0%;
   z-index:1;
-  background-image: -webkit-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgb(0,0,0)  50%, rgba(238, 238, 238, 0.00) 100%);
-  background-image: -moz-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%,rgb(0,0,0)  50%, rgba(238, 238, 238, 0.00) 100%);
-  background-image: -o-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgb(0,0,0) 50%, rgba(238, 238, 238, 0.00) 100%);
-  background-image: -ms-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgb(0,0,0)  50%, rgba(238, 238, 238, 0.00) 100%);
-  background-image: linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgb(0, 0, 0)  50%, rgba(238, 238, 238, 0.00) 100%);
+  background-image: -webkit-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgb(0,0,0, 0.589)  50%, rgba(238, 238, 238, 0.00) 100%);
+  background-image: -moz-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%,rgb(0,0,0, 0.589)  50%, rgba(238, 238, 238, 0.00) 100%);
+  background-image: -o-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgb(0,0,0, 0.589) 50%, rgba(238, 238, 238, 0.00) 100%);
+  background-image: -ms-linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgb(0,0,0, 0.589)  50%, rgba(238, 238, 238, 0.00) 100%);
+  background-image: linear-gradient(left top, rgba(94, 199, 204, 0.00) 0%, rgba(0, 0, 0, 0.589)  50%, rgba(238, 238, 238, 0.00) 100%);
   animation: gradient 10s infinite;
 }
 .KRBBH:hover{
@@ -156,6 +157,142 @@ top: -26.5px;
 }
 
 
+p {
+  margin-left: -55px;
+}
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+  text-align: center;
+  top: 10px;
+  cursor: pointer;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+
+}
+
+.KRBBH-img1{
+  display: flex;
+  position: absolute;
+  top: 20%;
+  margin-left: 6%;
+
+}
+
+.KRBBH-text1{
+  position: absolute;
+  width: 32%;
+  text-align: center;
+  color :white;
+  font-family:'FS Albert Arabic Web Regular' , 'B nazanin';
+  font-size: 1.6vw;
+  left: 57%;
+  top: 22%;
+}
+
+/* media  */
 
 @media screen and (min-width: 757px) and (max-width:992px){
     .image-site .komaki{
@@ -170,6 +307,20 @@ top: -26.5px;
     }
     .image-site .headernav .headernavitems{
         font-size: 17px;
+    }
+    .scroll-btn .mouse {
+      width: 30px;
+      height: 45px;
+    }
+    .scroll-btn .mouse > *{
+      width: 5px;
+      height: 5px;
+      left: 55%;
+    }
+    .KRBBH {
+
+      height: 60%;
+    
     }
 }
 
@@ -191,7 +342,21 @@ top: -26.5px;
     .image-site .headernav .headernavitems{
         font-size: 10px;
     }
+    .scroll-btn .mouse {
+      width: 25px;
+      height: 40px;
+    }
+    .scroll-btn .mouse > *{
+      width: 3px;
+      height: 3px;
+      left: 61%;
+    }
+    .KRBBH {
 
+      height: 40%;
+    
+    }
+ 
 }
 @media screen and (max-width: 400px){
   .sidebar{
@@ -224,5 +389,20 @@ top: -26.5px;
     .image-site .txt-rotate{
       transition: 0.5s;
   }
+  .scroll-btn .mouse {
+    width: 15px;
+    height: 25px;
+  }
+  .scroll-btn .mouse > *{
+    width: 2px;
+    height: 2px;
+    left: 75%;
+  }
+  .KRBBH {
+
+    height: 30%;
+  
+  }
+
 }
  
