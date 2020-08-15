@@ -124,7 +124,7 @@ transition: 0.5s;
 position: relative;
 top: -26.5px;
   width: 100%;
-  height: 90%;
+  height: 100%;
 
 }
 .KRBBH:after{
@@ -157,9 +157,6 @@ top: -26.5px;
 }
 
 
-p {
-  margin-left: -55px;
-}
 @-webkit-keyframes ani-mouse {
 	0% {
 	opacity: 1;
@@ -214,64 +211,8 @@ p {
 	top: 29%;
 	}
 }
- .scroll-btn {
-	display: block;
-	position: absolute;
-	left: 0;
-	right: 0;
-  text-align: center;
-  top: 10px;
-  cursor: pointer;
-}
-.scroll-btn > * {
-	display: inline-block;
-	line-height: 18px;
-	font-size: 13px;
-	font-weight: normal;
-	color: #7f8c8d;
-	color: #ffffff;
-	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	letter-spacing: 2px;
-}
-.scroll-btn > *:hover,
-.scroll-btn > *:focus,
-.scroll-btn > *.active {
-	color: #ffffff;
-}
-.scroll-btn > *:hover,
-.scroll-btn > *:focus,
-.scroll-btn > *:active,
-.scroll-btn > *.active {
-	opacity: 0.8;
-	filter: alpha(opacity=80);
-}
-.scroll-btn .mouse {
-	position: relative;
-	display: block;
-	width: 35px;
-	height: 55px;
-	margin: 0 auto 20px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border: 3px solid white;
-	border-radius: 23px;
-}
-.scroll-btn .mouse > * {
-	position: absolute;
-	display: block;
-	top: 29%;
-	left: 50%;
-	width: 8px;
-	height: 8px;
-	margin: -4px 0 0 -4px;
-	background: white;
-	border-radius: 50%;
-	-webkit-animation: ani-mouse 2.5s linear infinite;
-	-moz-animation: ani-mouse 2.5s linear infinite;
-	animation: ani-mouse 2.5s linear infinite;
+ 
 
-}
 
 .KRBBH-img1{
   display: flex;
@@ -292,13 +233,15 @@ p {
   top: 22%;
 }
 
-.box2{
+ .box2 {
   position: relative;
-  top: 90%;
+  top: 100px;
   width: 100%;
-  height: 550px;
-  background-color: whitesmoke;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
 }
+
+
 
 /* media  */
 
@@ -316,19 +259,10 @@ p {
     .image-site .headernav .headernavitems{
         font-size: 17px;
     }
-    .scroll-btn .mouse {
-      width: 30px;
-      height: 45px;
-      top:25%;
-    }
-    .scroll-btn .mouse > *{
-      width: 5px;
-      height: 5px;
-      left: 55%;
-    }
+
     .KRBBH {
 
-      height: 70%;
+      height: 480px;
     
     }
 }
@@ -351,18 +285,10 @@ p {
     .image-site .headernav .headernavitems{
         font-size: 10px;
     }
-    .scroll-btn .mouse {
-      width: 25px;
-      height: 40px;
-    }
-    .scroll-btn .mouse > *{
-      width: 3px;
-      height: 3px;
-      left: 61%;
-    }
+
     .KRBBH {
 
-      height: 75%;
+      height: 300px;
     
     }
  
@@ -398,18 +324,10 @@ p {
     .image-site .txt-rotate{
       transition: 0.5s;
   }
-  .scroll-btn .mouse {
-    width: 15px;
-    height: 25px;
-  }
-  .scroll-btn .mouse > *{
-    width: 2px;
-    height: 2px;
-    left: 75%;
-  }
+ 
   .KRBBH {
 
-    height: 75%;
+    height: 150px;
   
   }
 
