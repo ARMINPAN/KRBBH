@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'FS Albert Arabic Web Regular', 'B nazanin';
+}
+
+
+
+header{
+    display: flex;
+    text-align: right;
+}
+nav {
+    flex: 1;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    direction: rtl;
+    list-style: none;
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cover{
+    position: relative;
+
+}
+
+
+.header-img{
+    position: relative;
+    padding: top center;
+    width: 100%;
+    height: 86.5vh;
+    background: url('http://s10.picofile.com/file/8405810642/Untitled_33.jpg');
+    background-size: cover;
+        
+}
+.text-box{
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 18%;
+    background:rgba(255, 255, 255, 0.651);
+    width: 35%;
+    height: 35%;
+    direction: rtl;
+
+}
+
+.social-logos {
+    position: absolute;
+    top: 33%;
+    right: 12.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-logos img{
+    width: 5vh;
+}
+
+.social-logos div{
+    padding: 10%;
+}
+
+.boxkrbbh{
+    width: 100%;
+    height: 50vh;
+    background:gray;
+}
