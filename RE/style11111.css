@@ -40,8 +40,7 @@ main {
 }
 
 .cover{
-    position: relative;
-
+ position: relative;
 }
 
 
@@ -756,8 +755,11 @@ li i {
     font-size: 8px;
   }
   .text-box{
-    font-size: 5px;
+    font-size: 15px;
+    width: 35vh;
     height: 30vh;
+    padding: center center center center;
+    
   }
   .nav-header{
     display: none;
