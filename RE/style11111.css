@@ -31,6 +31,7 @@ main {
     justify-content: space-around;
     direction: rtl;
     list-style: none;
+    text-align: center;
 }
 .nav-link{
     color: rgb(0, 0, 0);
@@ -84,25 +85,28 @@ main {
 .boxkrbbh{
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: auto;
     background:linear-gradient(to left,rgb(82, 82, 82),rgb(180, 180, 180));
     justify-content: space-between;
+    align-items: center;
 }
 
 .KRBBH-img1{
-    padding: 6.2vh 0 0 10vh;
+  align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 5vh;
     width: 45%;
     height: 90%;
 }
 .KRBBH-text1 h1{
-    padding-top: 12vh;
+  align-items: center;
     text-align: center;
     margin: auto;
-    justify-content: space-between;
+
 }
 
 .KRBBH-text1 p{
-    padding: 2vh 0 0 0 ;
     text-align: center;
     margin: auto;
     font-size: 18px;
@@ -117,7 +121,6 @@ main {
 header h1{
   text-align: center;
   font-weight: bold;
-  margin-top: 0;
 }
   
  header p{
@@ -163,6 +166,7 @@ header h1{
 }
 
 .timeline {
+  color: black;
   position: relative;
   padding: 0;
   width: 100%;
@@ -297,6 +301,7 @@ header h1{
 }
 
 .desc {
+  font-size: 20px;
     direction: rtl;
     text-align: center;
   position: relative;
@@ -322,6 +327,7 @@ header h1{
     width: 660px;
     margin: 0 auto;
     margin-top: 20px;
+    font-size: 10px;
   }
 
   .timeline li:after {
@@ -412,6 +418,7 @@ header h1{
     width: 800px;
     margin: 0 auto;
     margin-top: 20px;
+    font-size: 10px;
   }
 
   .direction-l {
@@ -479,8 +486,8 @@ header h1{
   
 }
 .container{
-  width: 1000px;
-  max-width: 90%;
+  width: 100%;
+  max-width: 80%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -499,7 +506,7 @@ header h1{
   height: 300px;
   background: #000;
   box-shadow: 0 30px 30px rgba(0, 0, 0, .5);
-  margin-right: 10px;
+  margin-right: 20px;
   margin-left: 5px;
   margin-bottom: 30px;
 }
@@ -596,14 +603,22 @@ header h1{
 
 @media only screen and (max-width: 960px){
   .container{
-      flex-direction:column;
-      justify-content: space-between;
+      flex-direction:row;
       align-items: center;
   }
   .box{
       margin: 30px;
+      height: 250px;
+      width: 180px;
+  }
+  .container1{
+    height: 90vh;
+  }
+  .desc{
+    font-size: 10px;
   }
 }
+
 
 /* //////////////--------------------------------//footer */
 
@@ -710,15 +725,53 @@ li i {
 /* for tablet mode view */
 
 @media screen and (max-width: 1275px) {
+  .footer{
+    width: 100%;
+  }
   .footer-items {
       width: 50%;
+  }
+  .desc{
+    font-size: 10px;
   }
 }
 
 /* for mobile screen view */
 
 @media screen and (max-width: 660px) {
+  .footer{
+    width: 100%;
+  }
   .footer-items {
       width: 100%;
+  }
+  .KRBBH-text1 h1{
+    padding-top: 3vh;
+    font-size: 10px;
+  }
+  .KRBBH-text1 p{
+    width: 50%;
+    height: 100%;
+    padding-top: 0;
+    font-size: 8px;
+  }
+  .text-box{
+    font-size: 5px;
+    height: 30vh;
+  }
+  .nav-header{
+    display: none;
+  }
+  .desc{
+    font-size: 10px;
+  }
+
+@media screen and (max-width: 660px){
+  .timeline {
+    top: 5vh;
+    font-size: 8px;
+  }
+  .desc{
+    font-size: 10px;
   }
 }
