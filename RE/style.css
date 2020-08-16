@@ -425,3 +425,135 @@ header h1{
     text-align: left;
   }
 }
+
+/* -----------------------------------------box3 */
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+   
+/* -----------------------------------------box4 */
+
+
+
+#container-cards{
+    background:linear-gradient(to bottom,rgb(226, 226, 226),rgb(58, 58, 58));
+    position: absolute;
+    width: 100%;
+    height: 25%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.container-card{
+    position: relative;
+    margin: 20px 10px;
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 -5px 7px rgba(0,0,0,.1);
+    overflow: hidden;
+    background-color: #fff;
+}
+.image-box{
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 2;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out
+}
+.image-box img{
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out
+}
+
+
+/* DETAILS */
+.card-details{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 15px;
+}
+.card-details h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: #464646;
+}
+.card-details h1 span{
+    font-size: 14px;
+    font-weight: 400;
+    color: #ccc;
+}
+/* HOVER ACTIONS */
+.card:hover .image-box img{
+    opacity: 0.5;
+}
+.card:hover .image-box{
+    top: -75px;
+}
+.card:hover .social-icons li a{
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+.card:hover .social-icons li:nth-child(1) a{
+    transition-delay: 0s;
+}
+.card:hover .social-icons li:nth-child(2) a{
+    transition-delay: 0.1s;
+}
+.card:hover .social-icons li:nth-child(3) a{
+    transition-delay: 0.2s;
+}
+.card:hover .social-icons li:nth-child(4) a{
+    transition-delay: 0.3s;
+}
+.card:hover .social-icons li:nth-child(5) a{
+    transition-delay: 0.4s;
+}
