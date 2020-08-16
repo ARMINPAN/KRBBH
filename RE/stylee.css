@@ -3,13 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body{
 
     font-family: 'FS Albert Arabic Web Regular', 'B nazanin';
 }
 
+.nav-header a:hover{
+  color: rgb(53, 59, 145);
+  font-weight: bolder;
+  transition: 0.1s;
 
+}
 .sabtenam{
     text-decoration: none;
     color: gray;
@@ -32,6 +40,7 @@ main {
     direction: rtl;
     list-style: none;
     text-align: center;
+
 }
 .nav-link{
     color: rgb(0, 0, 0);
@@ -53,6 +62,8 @@ main {
     background-repeat: no-repeat;
         
 }
+
+
 .text-box{
     display: flex;
     position: absolute;
@@ -322,6 +333,7 @@ header h1{
 }
 
 @media(min-width: 768px){
+  
   .timeline {
     width: 660px;
     margin: 0 auto;
@@ -755,15 +767,16 @@ li i {
     font-size: 8px;
   }
   .text-box{
-    font-size: 15px;
+    font-size: 7px;
     width: 35vh;
-    height: 30vh;
+    height: 40vh;
     padding: center center center center;
     
   }
-  .nav-header{
-    display: none;
+  .nav-link{
+    font-size: 9px;
   }
+
   .desc{
     font-size: 10px;
   }
@@ -776,4 +789,18 @@ li i {
   .desc{
     font-size: 10px;
   }
+}}
+
+@media screen and (max-width: 440px) {
+  .text-box{
+    font-size: 5px;
+    width: 35vh;
+    height: 40vh;
+    padding: center center center center;
+  }
+  .nav-link{
+    font-size: 7px;
+  }
+
 }
+
